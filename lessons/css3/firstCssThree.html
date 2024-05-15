@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS3</title>
+    <style>
+
+        h1{
+            border: 5px solid green;
+            height: 40px;
+            width: 200px;
+            background: linear-gradient(blue, yellow, red, orange, green);
+        }
+
+        .thisDiv{
+            margin: 50px;
+            width: 100px;
+            height: 100px;
+            background: url("C:\Users\Advait\Documents\mycode\learningJS\lessons\happyLightbulb.png") no-repeat;
+            animation: moveit 2s linear 0s infinite alternate;
+            position: relative;
+        }
+
+        @keyframes moveit{
+            from{left: 0;}
+            to{left: 50%;}
+        }
+
+        img{
+            transform: rotate(30deg);
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>This is h1</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quae, eos excepturi distinctio explicabo similique quasi fugiat a doloremque illo omnis, voluptatibus atque voluptas quibusdam odio provident expedita eum error?</p>
+    
+    <h2>This is h2</h2>
+
+    <div class="thisDiv">
+
+        <img src="C:\Users\Advait\Documents\mycode\learningJS\lessons\happyLightbulb.png">
+
+    </div>
+
+</body>
+</html>

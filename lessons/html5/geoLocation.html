@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Location</title>
+</head>
+<body>
+    <script>
+
+        function showPosition(){
+
+            if (navigator.geolocation){
+
+                navigator.geolocation.getCurrentPosition(function(position){
+                    var myPostion = "Your current position is " + position.coords.latitude + "Longitude is " + position.coords.longitude + "<br/>";
+                    document.getElementById("firstDiv").innerHTML = myPostion;
+                });
+
+            } else {
+
+                alert("POSITION NOT FOUND")
+
+            }
+
+        }
+
+    </script>
+
+    <div id="firstDiv">
+    </div>
+
+    <input type="button" value="buttonOne" onclick="showPosition()">
+
+</body>
+</html>
